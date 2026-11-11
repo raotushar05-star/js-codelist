@@ -25,7 +25,8 @@ console.log(typeof newArr)
 console.log("A ", myArr)
 
 const myn1 = myArr.slice(1, 3)
-
+// Pro Tip: Calling .slice() with no arguments clones the whole array
+const clone = colors.slice();
 console.log(myn1)
 console.log("B ", myArr)
 
