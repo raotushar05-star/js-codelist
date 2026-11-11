@@ -32,4 +32,9 @@ console.log("B ", myArr)
 
 const myn2 = myArr.splice(1, 3)
 console.log(myn2)
+const items = ['apple', 'banana', 'cherry'];
+// At index 1, delete 1 item ('banana'), and insert 'grape' and 'kiwi'
+items.splice(1, 1, 'grape', 'kiwi'); 
+
+console.log(items);        // Output: ['apple', 'grape', 'kiwi', 'cherry']
 console.log("C ", myArr)
