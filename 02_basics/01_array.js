@@ -25,13 +25,15 @@ console.log(typeof newArr)
 console.log("A ", myArr)
 
 const myn1 = myArr.slice(1, 3)
+console.log(myn1)
+//Returns new array containing copied items. Params:Starting index and excluded closing index
 // Pro Tip: Calling .slice() with no arguments clones the whole array
 const clone = colors.slice();
-console.log(myn1)
 console.log("B ", myArr)
 
 const myn2 = myArr.splice(1, 3)
 console.log(myn2)
+//Returns a new array containing deleted items. Params: Starting index and the numbers of values to be deleted.
 const items = ['apple', 'banana', 'cherry'];
 // At index 1, delete 1 item ('banana'), and insert 'grape' and 'kiwi'
 items.splice(1, 1, 'grape', 'kiwi'); 
