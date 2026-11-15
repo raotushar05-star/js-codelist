@@ -4,7 +4,7 @@ const user = {
 
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
-        console.log(this);
+        console.log(this); //prints the context of the object
     }
 
 }
@@ -17,7 +17,7 @@ const user = {
 
 // function chai(){
 //     let username = "hitesh"
-//     console.log(this.username);
+//     console.log(this.username); //gives undefined beacuse context is available only in an object and not in a function
 // }
 
 // chai()
@@ -29,7 +29,7 @@ const user = {
 
 const chai =  () => {
     let username = "hitesh"
-    console.log(this);
+    console.log(this); //Interview question: difference between ordinary function and arrow function
 }
 
 
@@ -39,11 +39,11 @@ const chai =  () => {
 //     return num1 + num2
 // }
 
-// const addTwo = (num1, num2) =>  num1 + num2
-
+// const addTwo = (num1, num2) => num1 + num2
+// return is necessary with braces, not needed when writing in paranthesis
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
-const addTwo = (num1, num2) => ({username: "hitesh"})
+const addTwo = (num1, num2) => ({username: "hitesh"}) //objects need to be wrapped in paranthesis when returned
 
 
 console.log(addTwo(3, 4))
